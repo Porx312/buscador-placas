@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,400;1,700&display=swap');
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav{
+  background-color: rgb(1, 221, 250);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+.nav h2{
+color: white;
+font-weight: 700;
+font-size: 2rem;
+
+}
+.nav .ul-list{
+display: flex;
+list-style-type: none;
+gap: 1rem;
+}
+.nav .ul-list-item a{
+color: #fff;
+text-decoration: none;
+font-size: 1.3rem;
+}
+
+.header{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.footer{
+color: rgb(172, 169, 169);
+background-color: rgb(44, 43, 43);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-inline: 2rem;
+padding-block: 2rem;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search input[type="text"] {
+  width: 300px;
+  padding:20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+  background-color: #4e99e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(57, 57, 109);
+}
+
+
+/* card datos */
+
+.container-card{
+  display: flex;
+  flex-direction: row;
+  padding-block: 2rem;
+padding-inline: 3rem;
+align-items: center;
+justify-content: center;
+width: 40%;
+background-color: rgb(255, 251, 251);
+  box-shadow: 0 0 20px rgba(208, 208, 208, 0.8);
+  flex-wrap: 1;
+  border-radius: 2rem;
+  gap: 2rem;
+}
+
+.datos-card{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+.img-usuario{
+  width: 80%;
+}
+
+.container-card h2{
+  font-size: 1rem;
+  color: rgb(177, 177, 177);
+}
+.container-card h3{
+  font-weight: 600;
+}
+
+.container-card div{
+}
+.img{
+display: flex;
+flex-direction: column;
+}
+.img .estado-auto{
+  color: red;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.estado-btn{
+  display: flex;
+  gap: 1rem;
+}
+
+.btn{
+width: 140px;
+  padding: 1rem 2rem;
+outline: 0;
+border: 0;
+border-radius: 1rem;
+transition: all .2s ease-in-out;
+}
+.btn-activar:hover{
+  background-color: blue;
+  color: white;
+  transform: scale(1.1);
+}
+.btn-desactivar:hover{
+  transform: scale(1.1);
+  color: white;
+  background-color: red;
+}
+
+.footer p{
+font-size: 1.3rem;
+}
