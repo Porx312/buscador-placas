@@ -121,7 +121,7 @@ background-color: rgb(255, 251, 251);
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  gap: 2rem;
+  gap: 2.2rem;
 }
 .img-usuario{
   width: 80%;
@@ -174,3 +174,44 @@ transition: all .2s ease-in-out;
 .footer p{
 font-size: 1.3rem;
 }
+
+@media screen and (max-width: 907px) {
+  .container-card{
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+  padding-inline: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  background-color: rgb(255, 251, 251);
+    box-shadow: 0 0 20px rgba(208, 208, 208, 0.8);
+    flex-wrap: 1;
+    border-radius: 2rem;
+    gap: 2rem;
+  }
+  .img{
+  display: none;}
+  .search input[type="text"] {
+    width: 240px;
+    padding:20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .search input[type="text"] {
+    width: 200px;
+    padding:20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .container-card{
+    width: 50%;
+  }
+}
+
