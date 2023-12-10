@@ -215,3 +215,9 @@ font-size: 1.3rem;
   }
 }
 
+.no-existe{
+  font-size: 2rem;
+  color: red;
+  font-weight: 700;
+  transform: scale(1.2);
+}

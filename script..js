@@ -1166,8 +1166,10 @@ function filtrarPorPlaca() {
   const autosFiltrados = autos.filter(auto => auto.placa === placaBuscada);
 
   const introducirDatos = document.getElementById('introducirDatos'); // Agrega esta línea
-
   introducirDatos.innerHTML = ""; // Vacía el contenido previo
+  if (autosFiltrados.length === 0) {
+    introducirDatos.innerHTML = '<h2 class="no-existe">la placa no esta en la lista</h2>'
+}
   autosFiltrados.forEach(auto => {
     introducirDatos.insertAdjacentHTML('beforeend', `
       <div class="container-card">
